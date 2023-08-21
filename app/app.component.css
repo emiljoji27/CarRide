@@ -1,0 +1,13 @@
+/* Container Border */
+.box {
+    border: 2px solid #0047AB;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    }
+
+.mb-3{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+    

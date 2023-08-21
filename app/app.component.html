@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="color: #FF69B4;">PoolCarz</a>
+  <a class="navbar-brand me-auto" href="#" style="color: #FF69B4;margin-left:85%">Logout</a>
+</nav>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6 box" style="padding-right: 0px;padding-left: 0px;padding-bottom: 10px;">
+    <div class="text-white text-start" style="background-color: #0047AB;padding-bottom: 0.5%;">
+      <h4 >&nbsp;Car Ride Registration Form</h4>
+    </div>
+   
+   <form [formGroup]="seatForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+      <div *ngIf="seatForm.get('name').invalid && seatForm.get('name').touched" class="bg-danger text-white">Enter name!</div>
+    </div>
+    <div class="mb-3">
+      <label for="start" class="form-label">Start Location</label>
+      <input type="text" class="form-control" id="start" formControlName="start">
+      <div *ngIf="seatForm.get('start').invalid && seatForm.get('start').touched" class="bg-danger text-white">Enter start location!</div>
+    </div>
+    <div class="mb-3">
+      <label for="destination" class="form-label">Destination</label>
+      <input type="text" class="form-control" id="destination" formControlName="destination">
+      <div *ngIf="seatForm.get('destination').invalid && seatForm.get('destination').touched" class="bg-danger text-white">Enter destination!</div>
+    </div>
+    <div class="mb-3">
+      <label for="car" class="form-label">Car</label>
+      <input type="text" class="form-control" id="car" formControlName="car">
+      <div *ngIf="seatForm.get('car').invalid && seatForm.get('car').touched" class="bg-danger text-white">Enter car name!</div>
+    </div>
+    <div class="mb-3">
+      <label for="seats" class="form-label">Seats Available</label>
+      <input type="number" class="form-control" id="seats" formControlName="seats">
+      <div *ngIf="seatForm.get('seats').invalid && seatForm.get('seats').touched" class="bg-danger text-white">Enter capacity between 0-8</div>
+    </div>
+    <div class="mb-3">
+      <button type="submit" class="btn text-white" style="background-color: #0047AB;" [disabled]="seatForm.invalid">Submit</button>&nbsp;
+      <button class="btn text-white" style="background-color: #0047AB;">Go Back</button><br/>
+    </div>
+    
+  </form>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+</div>
+
+
