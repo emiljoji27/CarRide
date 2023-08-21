@@ -1,3 +1,8 @@
+
+![CarRide](https://github.com/emiljoji27/CarRide/assets/67428445/ea0ef448-6993-4bf7-8745-a1096be36120)
+
+
+
 # CarRide
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
